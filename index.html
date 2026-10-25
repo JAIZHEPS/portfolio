@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jaissy V – Designer &amp; Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Figtree:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600&family=Gochi+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-x>
+  <div id="bar"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="w">
+      <a class="logo" href="#top">Jaissy V</a>
+      <div class="links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#exp">Experience</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#contact">Contact</a>
+        <button class="sw" id="sw" aria-pressed="false" aria-label="Switch between design view and code view">
+          <i></i>
+          <span>Design</span>
+          <span>Code</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="top">
+    <div class="w hero-w">
+      <p class="eyebrow">Salem, India · B.Tech IT</p>
+      <h1 class="swap">
+        <div class="d">
+          Hi, I’m Jaissy.<br>
+          I design <span class="sel"><em>websites</em><span class="tagp">Frame · Hug</span></span><br>
+          and build them.
+        </div>
+        <div class="c" aria-hidden="false">
+          <s>// designer + developer</s><br>
+          <b>const</b> jaissy = {<br>
+          &nbsp;&nbsp;designs: "Figma",<br>
+          &nbsp;&nbsp;builds: "React · Node",<br>
+          &nbsp;&nbsp;ships: <b>true</b><br>
+          };
+        </div>
+      </h1>
+
+      <!-- Floating Doodles (Right side of hero section texts) -->
+      <div class="hero-float-doodles" aria-hidden="true">
+        <!-- Exact Paper Airplane Doodle -->
+        <div class="doodle-float doodle-plane-wrap" title="Paper Airplane">
+          <img src="assets/images/doodle-plane.svg" class="doodle-img doodle-plane" alt="Paper airplane doodle">
+        </div>
+        <!-- Exact Spiral Question Mark Doodle -->
+        <div class="doodle-float doodle-spiral-wrap" title="Spiral Question Mark">
+          <img src="assets/images/doodle-spiral.svg" class="doodle-img doodle-spiral" alt="Spiral question mark doodle">
+        </div>
+      </div>
+
+      <div class="sub">
+        <p>I’m a UI/UX designer and full-stack developer. I like taking an app from user research all the way to something people can actually use.</p>
+        <div class="sub-actions">
+          <a class="btn f" href="#work">View work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ticker / Marquee -->
+  <div class="mq" aria-hidden="true">
+    <div>
+      <span>Figma</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Framer</span>
+      <span>Node.js</span>
+      <span>PostgreSQL</span>
+      <span>Federated learning</span>
+      <span>Prototyping</span>
+    </div>
+    <div>
+      <span>Figma</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Framer</span>
+      <span>Node.js</span>
+      <span>PostgreSQL</span>
+      <span>Federated learning</span>
+      <span>Prototyping</span>
+    </div>
+  </div>
+
+  <!-- About / Bio Section -->
+  <section id="me" style="padding-top:clamp(32px,5vw,72px)">
+    <div class="w ps">
+      <div class="pf rv">
+        <span class="note" aria-hidden="true">that’s me ↘</span>
+
+        <!-- Yellow Layered Star Doodle (Tucked half behind the picture) -->
+        <div class="doodle-half-behind" title="Doodle star" aria-hidden="true">
+          <img src="assets/images/doodle-star-yellow.svg" class="star-doodle-img" alt="Yellow star doodle">
+        </div>
+
+        <!-- Clean Photo Frame -->
+        <div class="pm">
+          <div class="pi">
+            <img src="assets/images/jaissy.jpg" alt="Jaissy V – UI/UX Designer & Developer">
+          </div>
+        </div>
+
+        <div class="sk" aria-hidden="true">Design<br>+ Code</div>
+      </div>
+
+      <div class="pt rv">
+        <!-- Purple Star Doodle (To the right of the about me text) -->
+        <div class="doodle-about-right" title="Doodle star" aria-hidden="true">
+          <img src="assets/images/doodle-star-purple.svg" class="star-doodle-img" alt="Purple star doodle">
+        </div>
+
+        <p class="lab">A bit about me</p>
+        <h2>Based in <em>Salem</em></h2>
+        <dl class="fa">
+          <dt>Education</dt>
+          <dd>B.Tech Information Technology, AVS Engineering College, 2023–2027</dd>
+          <dt>Service</dt>
+          <dd>UI/UX design, full-stack development and data analytics &amp; Machine Learning</dd>
+          <dt>Languages</dt>
+          <dd>Tamil, English, Hindi, Telugu</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="work">
+    <div class="w">
+      <p class="lab rv">Projects</p>
+      <h2 class="rv">Selected <em>work</em></h2>
+      <div id="list">
+        <a class="row rv" href="#wander" data-c="#ff8a65" data-l="Wander India" data-img="assets/images/wander-preview.png">
+          <span class="n">01</span>
+          <span class="t">Wander India</span>
+          <span class="g">MERN-Stack</span>
+          <span class="a">↗</span>
+        </a>
+        <a class="row rv" href="#blinkbuy" data-c="#b9a7ff" data-l="BlinkBuy" data-img="assets/images/blinkbuy-preview.png">
+          <span class="n">02</span>
+          <span class="t">BlinkBuy</span>
+          <span class="g">UI/UX · Retail app</span>
+          <span class="a">↗</span>
+        </a>
+        <a class="row rv" href="#carevo" data-c="#7fd6c2" data-l="Carevo" data-img="assets/images/carevo-preview.png">
+          <span class="n">03</span>
+          <span class="t">Carevo</span>
+          <span class="g">UI/UX · Telemedicine</span>
+          <span class="a">↗</span>
+        </a>
+        <a class="row rv" href="#health" data-c="#f5d36b" data-l="Health Prediction" data-img="assets/images/health-preview.png">
+          <span class="n">04</span>
+          <span class="t">Health Prediction</span>
+          <span class="g">Python · Federated learning</span>
+          <span class="a">↗</span>
+        </a>
+        <a class="row rv" href="#unavu" data-c="#ffb3c7" data-l="UNAVU" data-img="assets/images/unavu-preview.png">
+          <span class="n">05</span>
+          <span class="t">UNAVU</span>
+          <span class="g">UI/UX · Food delivery</span>
+          <span class="a">↗</span>
+        </a>
+        <a class="row rv" href="#farmfresh" data-c="#9cc8ff" data-l="Farm Fresh" data-img="assets/images/farmfresh-preview.png">
+          <span class="n">06</span>
+          <span class="t">Farm Fresh</span>
+          <span class="g">Flask · E-commerce</span>
+          <span class="a">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Hover Preview Element -->
+  <div id="pv" aria-hidden="true"></div>
+
+  <!-- Case Study Detailed View Section -->
+  <section id="case" style="padding-top:clamp(32px,5vw,64px)">
+    <div class="w">
+      <a class="back" href="#work">← All work</a>
+
+      <!-- Case: Wander India -->
+      <article class="cp on" id="cp-wander">
+        <h3>Wander India</h3>
+        <p class="lead">A full-stack tours and travel booking app, built end to end.</p>
+        <div class="fx">
+          <div><span>Role</span>Associate Software Engineer</div>
+          <div><span>Company</span>KRISHNOVA LLP</div>
+          <div><span>Duration</span>Mar–Jun 2026</div>
+          <div><span>Stack</span>MongoDB, Express, React, Node.js, TypeScript, PostgreSQL</div>
+        </div>
+        <div class="hero-screen-wrap">
+          <a class="note-live" href="https://wander-india-frontend-hbta.onrender.com" target="_blank" rel="noopener noreferrer">live preview ↘</a>
+          <a class="hv hv-img" href="https://wander-india-frontend-hbta.onrender.com" target="_blank" rel="noopener noreferrer" title="Open Wander India live website">
+            <img src="assets/images/wander-hero.jpg" alt="Wander India – AI-Powered Travel Planning Web Application">
+          </a>
+        </div>
+        <div class="cg">
+          <h4>The problem</h4>
+          <p>Planning a trip across India means jumping between sites to compare tours and book. Wander India brings browsing and booking into one place. We added seamless bookings for the users with a simple, intuitive user interface.</p>
+        </div>
+        <div class="cg">
+          <h4>How it’s built</h4>
+          <ul>
+            <li><b>Frontend:</b> React with TypeScript.</li>
+            <li><b>Backend:</b> Node.js and Express API.</li>
+            <li><b>Data:</b> MongoDB and PostgreSQL.</li>
+          </ul>
+        </div>
+        <div class="cg">
+          <h4>Challenges</h4>
+          <ol>
+            <li>Had difficulties in understanding requirements according to each user.</li>
+            <li>New stacks adaptation gave me confusions and took a bit of time to understand.</li>
+          </ol>
+        </div>
+        <div class="cg">
+          <h4>Outcome</h4>
+          <div>
+            <p style="margin-bottom:20px">A working booking app covering discovery to booking.</p>
+            <div class="outcome-actions">
+              <a class="btn f" href="https://wander-india-frontend-hbta.onrender.com" target="_blank" rel="noopener noreferrer">Live app ↗</a>
+              <a class="btn" href="https://github.com/JAIZHEPS/wander-india.git" target="_blank" rel="noopener noreferrer">GitHub repo ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case: BlinkBuy -->
+      <article class="cp" id="cp-blinkbuy">
+        <h3>BlinkBuy</h3>
+        <p class="lead">An omnichannel retail app, redesigned around the moments where shoppers got stuck.</p>
+        <div class="fx">
+          <div><span>Role</span>UI/UX Designer</div>
+          <div><span>Company</span>Infotact Solutions, with a team of designers</div>
+          <div><span>Duration</span>Mar–Jun 2026</div>
+          <div><span>Tools</span>Figma</div>
+        </div>
+        <div class="hero-screen-wrap">
+          <a class="note-live" href="https://lnkd.in/p/gJb23r_N" target="_blank" rel="noopener noreferrer">live preview ↘</a>
+          <a class="hv hv-img" href="https://lnkd.in/p/gJb23r_N" target="_blank" rel="noopener noreferrer" title="Open BlinkBuy project on LinkedIn">
+            <img src="assets/images/blinkbuy-hero.png" alt="BlinkBuy – Mobile App UI/UX Splash Screen Mockup">
+          </a>
+        </div>
+        <div class="cg">
+          <h4>The problem</h4>
+          <p>Onboarding and checkout had pain points that made shopping harder than it needed to be. Users faced difficulties navigating with cluttered user interfaces.</p>
+        </div>
+        <div class="cg">
+          <h4>Process</h4>
+          <ol>
+            <li><b>Research:</b> User research to uncover onboarding and checkout pain points. Created empathy maps and user personas for clear understanding and usability.</li>
+            <li><b>Flows:</b> Mapped user journeys and reworked navigation structure.</li>
+            <li><b>High-fidelity UI:</b> Polished screens designed with consistent UI components.</li>
+            <li><b>Review:</b> As first-time designers, my teammates and I received positive feedback, iterated to make the UI simpler, and conducted UX research to understand where users experienced difficulties.</li>
+          </ol>
+        </div>
+        <div class="cg">
+          <h4>Key decisions</h4>
+          <ul>
+            <li><b>Simpler onboarding:</b> Applied color theory and addressed user pain points, making the login process easier by adding a mobile number option.</li>
+            <li><b>Streamlined checkout:</b> Simplified navigation and added an intuitive, visually appealing user interface so users can move through the app easily.</li>
+            <li><b>Clearer navigation:</b> Restructured pathways so users experience seamless navigation throughout the application.</li>
+          </ul>
+        </div>
+        <div class="cg">
+          <h4>Outcome</h4>
+          <div>
+            <p style="margin-bottom:20px">High-fidelity screens and streamlined navigation flows.</p>
+            <div class="outcome-actions">
+              <a class="btn f" href="https://lnkd.in/p/gJb23r_N" target="_blank" rel="noopener noreferrer">View on LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case: Carevo -->
+      <article class="cp" id="cp-carevo">
+        <h3>Carevo</h3>
+        <p class="lead">Healthcare made simple: a telemedicine dashboard with a calm, clear hierarchy.</p>
+        <div class="fx">
+          <div><span>Role</span>UI/UX Designer</div>
+          <div><span>Company</span>Infotact Solutions</div>
+          <div><span>Duration</span>Mar–Jun 2026</div>
+          <div><span>Tools</span>Figma, interactive prototype</div>
+        </div>
+        <div class="hero-screen-wrap">
+          <a class="note-live" href="https://lnkd.in/p/g_7X_hjR" target="_blank" rel="noopener noreferrer">live preview ↘</a>
+          <a class="hv hv-img" href="https://lnkd.in/p/g_7X_hjR" target="_blank" rel="noopener noreferrer" title="Open Carevo project on LinkedIn">
+            <img src="assets/images/carevo-hero.png" alt="Carevo – Telemedicine Platform Landing Screen">
+          </a>
+        </div>
+        <div class="cg">
+          <h4>The problem</h4>
+          <p>Healthcare tools can overwhelm people at stressful moments. Carevo needed an interface that makes care easy to find and manage. This web application is targeted towards older and busy individuals.</p>
+        </div>
+        <div class="cg">
+          <h4>Process</h4>
+          <ol>
+            <li><b>User flows:</b> Planned the main journeys such as login, main dashboard, booking details, profile, and appointment confirmation.</li>
+            <li><b>Visual hierarchy:</b> Decided what shows first and what can wait.</li>
+            <li><b>Design system:</b> Reusable components for consistency.</li>
+            <li><b>Prototype:</b> Mobile screens and a clickable Figma flow.</li>
+          </ol>
+        </div>
+        <div class="cg">
+          <h4>Key decisions</h4>
+          <ul>
+            <li><b>Hierarchy:</b> Next appointment is the biggest element, alongside the doctor’s information screen.</li>
+            <li><b>Calm visuals:</b> White and blue were chosen for a calm and effortless user experience, avoiding overly flashy colors that induce tension.</li>
+            <li><b>Accessibility:</b> Medium to large font sizes to help the targeted users navigate throughout the app more seamlessly.</li>
+          </ul>
+        </div>
+        <div class="cg">
+          <h4>Outcome</h4>
+          <div>
+            <p style="margin-bottom:20px">A clear, consistent dashboard with a working interactive prototype.</p>
+            <div class="outcome-actions">
+              <a class="btn f" href="https://lnkd.in/p/g_7X_hjR" target="_blank" rel="noopener noreferrer">View on LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case: Health Prediction -->
+      <article class="cp" id="cp-health">
+        <h3>Health Prediction</h3>
+        <p class="lead">A health prediction model that trains across datasets while keeping data private, using federated learning.</p>
+        <div class="fx">
+          <div><span>Role</span>Developer (ML)</div>
+          <div><span>Duration</span>Jun–Jul 2025</div>
+          <div><span>Stack</span>Python, TensorFlow Federated, React</div>
+          <div><span>Focus</span>Privacy-preserving AI</div>
+        </div>
+        <div class="hero-screen-wrap">
+          <a class="note-live" href="https://health-ml-app-w3trjt7crpjzw8h4of74zv.streamlit.app" target="_blank" rel="noopener noreferrer">live preview ↘</a>
+          <a class="hv hv-img" href="https://health-ml-app-w3trjt7crpjzw8h4of74zv.streamlit.app" target="_blank" rel="noopener noreferrer" title="Open Health Prediction live web app">
+            <img src="assets/images/health-hero.png" alt="Human Health Prediction Interface – Machine Learning Interface">
+          </a>
+        </div>
+        <div class="cg">
+          <h4>The problem</h4>
+          <p>Health data is sensitive, so pooling it in one place is risky. The goal was a prediction model that learns from several datasets without centralizing the raw data.</p>
+        </div>
+        <div class="cg">
+          <h4>Approach</h4>
+          <ol>
+            <li><b>Data:</b> Trained across multiple distributed datasets including heart, lungs, and thyroid health records.</li>
+            <li><b>Federated learning:</b> Models are trained locally on decentralized client nodes and aggregated, keeping raw patient data secure.</li>
+            <li><b>Model:</b> Multi-model architecture combining specialized ML predictors into an interactive diagnostic interface.</li>
+          </ol>
+        </div>
+        <div class="cg">
+          <h4>Technologies used</h4>
+          <ul>
+            <li><b>Machine Learning &amp; Federated:</b> Python, TensorFlow Federated (TFF), Scikit-learn, NumPy, Pandas, Matplotlib, Flower framework.</li>
+            <li><b>Frontend:</b> React.js, JavaScript, HTML5, CSS3.</li>
+            <li><b>Backend &amp; Database:</b> Node.js, Express.js, MongoDB.</li>
+            <li><b>Version Control &amp; Testing:</b> Git, GitHub, Postman API Testing.</li>
+          </ul>
+        </div>
+        <div class="cg">
+          <h4>Related work</h4>
+          <p>I also built an AI health predictor that reads user-entered symptoms and suggests possible conditions using NLP and machine learning.</p>
+        </div>
+        <div class="cg">
+          <h4>Outcome</h4>
+          <div>
+            <p style="margin-bottom:20px">A working privacy-preserving health prediction model with an interactive multi-model health prediction interface.</p>
+            <div class="outcome-actions">
+              <a class="btn f" href="https://health-ml-app-w3trjt7crpjzw8h4of74zv.streamlit.app" target="_blank" rel="noopener noreferrer">Live app ↗</a>
+              <a class="btn" href="https://github.com/JAIZHEPS" target="_blank" rel="noopener noreferrer">GitHub repo ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case: UNAVU -->
+      <article class="cp" id="cp-unavu">
+        <h3>UNAVU</h3>
+        <p class="lead">A minimal mobile food-delivery interface, designed from user flow to interactive prototype.</p>
+        <div class="fx">
+          <div><span>Role</span>UI/UX Designer</div>
+          <div><span>Platform</span>Mobile app</div>
+          <div><span>Tools</span>Figma</div>
+          <div><span>Type</span>Personal project</div>
+        </div>
+        <div class="hero-screen-wrap">
+          <a class="note-live" href="https://lnkd.in/p/gPipAK6H" target="_blank" rel="noopener noreferrer">live preview ↘</a>
+          <a class="hv hv-img" href="https://lnkd.in/p/gPipAK6H" target="_blank" rel="noopener noreferrer" title="Open UNAVU project on LinkedIn">
+            <img src="assets/images/unavu-hero.png" alt="UNAVU – Minimal Food Delivery Mobile Interface Mockup">
+          </a>
+        </div>
+        <div class="cg">
+          <h4>The problem</h4>
+          <p>Food-delivery apps are often crowded with offers, clutter, and endless options. UNAVU explores a simpler, calm way to find food and order without decision fatigue.</p>
+        </div>
+        <div class="cg">
+          <h4>Process</h4>
+          <ol>
+            <li><b>User flow mapping:</b> Mapped the core journey from opening the app to discovering meals, customizing items, and completing orders seamlessly.</li>
+            <li><b>Wireframing:</b> Sketched and tested clean low-fidelity wireframes focused on uncluttered layouts, intuitive search, and instant cart access.</li>
+            <li><b>Interactive prototype:</b> Connected high-fidelity screens into a clickable Figma mobile prototype.</li>
+          </ol>
+        </div>
+        <div class="cg">
+          <h4>Key decisions</h4>
+          <ul>
+            <li><b>Minimal layout:</b> Simple screens and streamlined bottom navigation, keeping the focus entirely on appetizing meals without distracting ads.</li>
+            <li><b>Type and color:</b> Warm peach and gentle lavender tones paired with clean typography for a comforting, appetizing visual identity.</li>
+          </ul>
+        </div>
+        <div class="cg">
+          <h4>Outcome</h4>
+          <div>
+            <p style="margin-bottom:20px">A clean food-delivery prototype you can click through, validating an effortless ordering journey that feels refreshing and frictionless.</p>
+            <div class="outcome-actions">
+              <a class="btn f" href="https://lnkd.in/p/gPipAK6H" target="_blank" rel="noopener noreferrer">View on LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case: Farm Fresh -->
+      <article class="cp" id="cp-farmfresh">
+        <h3>Farm Fresh</h3>
+        <p class="lead">A lightweight e-commerce platform built with Flask, tailored for local producers to list and sell farm fresh goods.</p>
+        <div class="fx">
+          <div><span>Role</span>Developer</div>
+          <div><span>Duration</span>Jun–Jul 2025</div>
+          <div><span>Stack</span>Python, Flask, HTML5, CSS3, JavaScript</div>
+          <div><span>Type</span>Personal project</div>
+        </div>
+        <div class="hero-screen-wrap">
+          <a class="note-live" href="https://e-commerce-website-five-tan.vercel.app/" target="_blank" rel="noopener noreferrer">live preview ↘</a>
+          <a class="hv hv-img" href="https://e-commerce-website-five-tan.vercel.app/" target="_blank" rel="noopener noreferrer" title="Open Farm Fresh live shop portal">
+            <img src="assets/images/farmfresh-hero.png" alt="Farm Fresh – Lightweight E-Commerce Storefront">
+          </a>
+        </div>
+        <div class="cg">
+          <h4>The problem</h4>
+          <p>Small sellers need a simple way to list products and take orders online. Farm Fresh provides an intuitive, lightweight storefront designed specifically for selling fresh farm produce directly to consumers.</p>
+        </div>
+        <div class="cg">
+          <h4>How it’s built</h4>
+          <ul>
+            <li><b>Backend:</b> Python and Flask for request handling, product routing, and session management.</li>
+            <li><b>Frontend:</b> Responsive HTML5, CSS3, and JavaScript for an engaging, easy-to-browse shopping experience.</li>
+            <li><b>Features:</b> Dynamic product listing, interactive shopping cart, instant total calculation, and seamless checkout.</li>
+          </ul>
+        </div>
+        <div class="cg">
+          <h4>Outcome</h4>
+          <div>
+            <p style="margin-bottom:20px">A working lightweight online store covering product discovery, cart management, and seamless order checkout.</p>
+            <div class="outcome-actions">
+              <a class="btn f" href="https://e-commerce-website-five-tan.vercel.app/" target="_blank" rel="noopener noreferrer">Shop Portal ↗</a>
+              <a class="btn" href="https://github.com/JAIZHEPS/E-commerce-website.git" target="_blank" rel="noopener noreferrer">GitHub repo ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Next Project Link -->
+      <div class="nxt">
+        <p class="lab">Next project</p>
+        <a id="nx" class="big" href="#blinkbuy">BlinkBuy →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process / How I work -->
+  <section style="padding-top:0">
+    <div class="w">
+      <p class="lab rv">How I work</p>
+      <h2 class="rv">From idea to <em>deployed</em></h2>
+      <div class="steps">
+        <div class="st rv">
+          <b>01</b>
+          <div>
+            <h3 style="margin:0 0 6px;font-weight:500">Research</h3>
+            <p>User interviews and pain points before pixels.</p>
+          </div>
+        </div>
+        <div class="st rv">
+          <b>02</b>
+          <div>
+            <h3 style="margin:0 0 6px;font-weight:500">Design</h3>
+            <p>Flows, wireframes and prototypes in Figma.</p>
+          </div>
+        </div>
+        <div class="st rv">
+          <b>03</b>
+          <div>
+            <h3 style="margin:0 0 6px;font-weight:500">Build</h3>
+            <p>React, Node and TypeScript, as designed.</p>
+          </div>
+        </div>
+        <div class="st rv">
+          <b>04</b>
+          <div>
+            <h3 style="margin:0 0 6px;font-weight:500">Ship</h3>
+            <p>Deployed on Vercel, Render or Railway.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" style="padding-top:0">
+    <div class="w">
+      <p class="lab">About</p>
+      <div class="about-desc-wrap">
+        <p id="ab">I’m a B.Tech IT student from Salem. I research, design in Figma, and then build what I designed, from a telemedicine dashboard to a travel booking app to a privacy-preserving ML model.</p>
+        <!-- Snoopy Coding at Computer Doodle (Right next to about description) -->
+        <div class="about-doodle-area" aria-hidden="true">
+          <div class="doodle-snoopy-wrap" title="Snoopy coding at computer">
+            <img src="assets/images/doodle-snoopy.png" class="doodle-img doodle-snoopy" alt="Snoopy coding at computer doodle" width="503" height="376">
+          </div>
+        </div>
+      </div>
+      <div class="stats rv">
+        <div><b>SIH ’24 &amp; ’25</b><span>Smart India Hackathon</span></div>
+        <div><b>2nd place</b><span>Paper presentation</span></div>
+        <div><b>5+</b><span>AI and data certifications</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="exp" style="padding-top:0">
+    <div class="w">
+      <p class="lab rv">Experience</p>
+      <h2 class="rv">Where I’ve <em>worked</em></h2>
+      
+      <div class="exp-body">
+        <!-- Hanging Golden Crescent Moon Doodle on the Left -->
+        <div class="exp-doodle-area" aria-hidden="true">
+          <div class="doodle-float doodle-hanging-moon" title="Hanging crescent moon">
+            <img src="assets/images/doodle-crescent-moon.svg" class="moon-doodle-img" alt="Hanging crescent moon doodle">
+          </div>
+        </div>
+
+        <!-- Experience Rows on the Right -->
+        <div class="exp-list">
+          <div class="ex rv"><b>UI/UX Designer</b><span>Infotact Solutions · BlinkBuy, Carevo</span><span>2026</span></div>
+          <div class="ex rv"><b>Associate Software Engineer</b><span>KRISHNOVA LLP · Wander India</span><span>2026</span></div>
+          <div class="ex rv"><b>AIML Intern</b><span>ADVI Group of Companies</span><span>2024</span></div>
+          <div class="ex rv" style="border-bottom:1px solid var(--line)"><b>Associate Python Developer</b><span>IMAGECON</span><span>2024</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs Section -->
+  <section id="blogs" style="border-top:1px solid var(--line)">
+    <div class="w">
+      <p class="lab">Blogs</p>
+      <h2>Articles &amp; <em>thoughts</em></h2>
+      <div class="blog-grid">
+        <a class="blog-card" href="https://medium.com/@vjaissy/sneak-peek-into-my-journey-learning-ml-e8985282e64c" target="_blank" rel="noopener noreferrer" title="Read on Medium: Sneak Peek into My Journey Learning ML:">
+          <div class="blog-media">
+            <img src="assets/images/blog-ml.png" alt="Sneak Peek into My Journey Learning ML:">
+          </div>
+          <div class="blog-meta">
+            <span class="blog-tag">Machine Learning</span>
+            <span class="blog-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="https://medium.com/@vjaissy/will-ai-destroy-human-resources-why-we-must-put-limits-on-artificial-intelligence-4fc97c85e9af" target="_blank" rel="noopener noreferrer" title="Read on Medium: Will AI Destroy Human Resources? Why We Must Put Limits on Artificial Intelligence">
+          <div class="blog-media">
+            <img src="assets/images/blog-ai-hr.png" alt="Will AI Destroy Human Resources? Why We Must Put Limits on Artificial Intelligence">
+          </div>
+          <div class="blog-meta">
+            <span class="blog-tag">AI Ethics</span>
+            <span class="blog-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="blog-card" href="https://medium.com/@vjaissy/why-did-the-united-states-suspend-major-it-companies-a21ca2e33e63" target="_blank" rel="noopener noreferrer" title="Read on Medium: Why Did the United States Suspend Major IT Companies? The Real Story Behind the 2026 Green Card Crackdown">
+          <div class="blog-media">
+            <img src="assets/images/blog-us-it.png" alt="Why Did the United States Suspend Major IT Companies? The Real Story Behind the 2026 Green Card Crackdown">
+          </div>
+          <div class="blog-meta">
+            <span class="blog-tag">Tech &amp; Policy</span>
+            <span class="blog-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="blog-card blog-card-more" href="https://medium.com/@vjaissy" target="_blank" rel="noopener noreferrer" title="Visit Jaissy on Medium">
+          <div class="blog-card-more-inner">
+            <span class="blog-icon-medium">M</span>
+            <h3>Read more on Medium</h3>
+            <p>Articles on AI, Machine Learning, product design, and tech culture.</p>
+            <span class="blog-pill">@vjaissy ↗</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="border-top:1px solid var(--line)">
+    <div class="w">
+      <p class="lab rv">Contact</p>
+      <h2 class="rv">Want to <em>work together?</em></h2>
+      
+      <div class="contact-header rv">
+        <a class="big" href="mailto:vjaissy@gmail.com" title="Click to open email or copy address">vjaissy@gmail.com ↗</a>
+        <div class="contact-links">
+          <button type="button" class="contact-link" id="copy-email-top-btn">Copy email</button>
+          <span>·</span>
+          <a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=vjaissy@gmail.com" target="_blank" rel="noopener noreferrer">Gmail ↗</a>
+        </div>
+      </div>
+
+      <!-- Contact Body: Form on Left + Whale Shark Doodle Straight to the Right -->
+      <div class="contact-body">
+        <!-- Human, Clean Contact Form -->
+        <form id="contact-form" class="contact-form rv">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="Your email address" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="4" placeholder="Tell me about your project, team, or idea..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn f">Send message ↗</button>
+          </div>
+          <div id="contact-status" class="contact-status" aria-live="polite"></div>
+        </form>
+
+        <!-- Floating Marine Doodles (Straight right to the email box, side by side without overlapping) -->
+        <div class="contact-doodle-area" aria-hidden="true">
+          <!-- 1. Whale Shark Doodle -->
+          <div class="doodle-float doodle-shark-wrap" title="Whale shark doodle">
+            <img src="assets/images/doodle-whale.svg" class="doodle-img doodle-shark" alt="Whale shark doodle">
+          </div>
+          <!-- 2. Humpback Whale with Moon Doodle -->
+          <div class="doodle-float doodle-humpback-wrap" title="Humpback whale doodle reaching for the moon">
+            <img src="assets/images/doodle-humpback.svg" class="doodle-img doodle-humpback" alt="Humpback whale doodle reaching for the moon">
+          </div>
+          <!-- 3. Jellyfish with Starfish Doodle (Right next to the previous one, non-overlapping) -->
+          <div class="doodle-float doodle-jellyfish-wrap" title="Jellyfish doodle with starfish">
+            <img src="assets/images/doodle-jellyfish.svg" class="doodle-img doodle-jellyfish" alt="Jellyfish doodle with starfish">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Toast Notification -->
+  <div id="toast-notice" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="w">
+      <span>© Jaissy V</span>
+      <span><a href="https://linkedin.com/in/jaissy-v-hepsiba">LinkedIn</a> · <a href="https://github.com/JAIZHEPS">GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
