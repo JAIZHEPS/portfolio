@@ -704,6 +704,8 @@ section {
 .pf {
   position: relative;
   isolation: isolate; /* Creates clean local stacking context so z-index is strictly contained */
+  width: 100%;
+  max-width: 320px;
 }
 
 /* 1. "that's me ↘" Note: Exactly above the picture as originally designed */
@@ -744,10 +746,12 @@ section {
 .pm {
   position: relative;
   z-index: 2; /* Strictly in front of .doodle-half-behind */
+  width: 100%;
   aspect-ratio: 4 / 5;
+  min-height: 280px;
   border-radius: 28px;
   overflow: hidden;
-  clip-path: inset(100% 0 0 0 round 28px);
+  clip-path: inset(0 0 0 0 round 28px);
   transition: clip-path 1.3s cubic-bezier(0.2, 0.7, 0.2, 1);
   background: var(--card); /* Opaque background */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
@@ -763,14 +767,14 @@ section {
 
 .pi {
   position: absolute;
-  inset: -8% 0;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
   color: var(--on);
-  transform: scale(1.25);
+  transform: scale(1);
   transition: transform 1.8s cubic-bezier(0.2, 0.7, 0.2, 1);
   pointer-events: none;
 }
@@ -2175,35 +2179,63 @@ footer .w {
 
   /* Profile Me Section */
   .pf {
-    max-width: 250px;
-    margin: 0 auto 16px;
+    width: 100% !important;
+    max-width: 250px !important;
+    margin: 40px auto 36px !important;
+    display: block !important;
+  }
+
+  .pm {
+    width: 100% !important;
+    aspect-ratio: 4 / 5 !important;
+    min-height: 310px !important;
+    clip-path: inset(0 0 0 0 round 24px) !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  .pi {
+    position: absolute !important;
+    inset: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+  }
+
+  .pi img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+    display: block !important;
   }
 
   .doodle-half-behind {
-    left: -28px;
-    top: 28%;
-    width: 108px;
+    left: -28px !important;
+    top: 25% !important;
+    width: 108px !important;
   }
 
   .note {
-    left: -2px;
-    top: -28px;
-    font-size: 24px;
+    left: -2px !important;
+    top: -28px !important;
+    font-size: 24px !important;
   }
 
   .sk {
-    width: 84px;
-    height: 84px;
-    font-size: 12px;
-    right: -8px;
-    bottom: -8px;
+    width: 84px !important;
+    height: 84px !important;
+    font-size: 12px !important;
+    right: -8px !important;
+    bottom: -8px !important;
   }
 
   .doodle-about-right {
-    top: -14px;
-    right: 0;
-    width: 68px;
-    opacity: 0.9;
+    top: -14px !important;
+    right: 0 !important;
+    width: 68px !important;
+    opacity: 0.9 !important;
   }
 
   /* Selected Work Rows */
@@ -2335,36 +2367,84 @@ footer .w {
     font-weight: 500;
   }
 
-  /* Blogs Section */
+  /* Blogs Section: Compact 2-column grid */
   .blog-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
   }
 
   .blog-card {
-    min-height: 220px;
-    aspect-ratio: 16 / 10;
-    border-radius: 18px;
+    min-height: 135px !important;
+    height: 145px !important;
+    aspect-ratio: auto !important;
+    border-radius: 16px !important;
   }
 
+  .blog-media {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .blog-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+
+  .blog-meta {
+    padding: 8px 10px !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%) !important;
+  }
+
+  .blog-tag {
+    font: 500 11px / 1 "Figtree", sans-serif !important;
+    padding: 4px 8px !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+  }
+
+  .blog-arrow {
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 12px !important;
+  }
+
+  /* Card 4 - Read more on Medium */
   .blog-card-more {
-    min-height: 170px;
-    aspect-ratio: auto;
-    padding: 24px 20px;
+    height: 145px !important;
+    min-height: 135px !important;
+    aspect-ratio: auto !important;
+    padding: 10px !important;
+  }
+
+  .blog-card-more-inner {
+    gap: 5px !important;
   }
 
   .blog-icon-medium {
-    width: 48px;
-    height: 48px;
-    font-size: 30px;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 19px !important;
+    margin-bottom: 0 !important;
   }
 
   .blog-card-more h3 {
-    font-size: 16px;
+    font-size: 12.5px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
   }
 
   .blog-card-more p {
-    font-size: 13px;
+    display: none !important; /* Hide long paragraph so Card 4 is compact & symmetrical */
+  }
+
+  .blog-pill {
+    font-size: 11px !important;
+    padding: 3px 8px !important;
+    margin-top: 2px !important;
   }
 
   /* Contact Section: Form + Marine Trio in clean natural flow */
@@ -2646,6 +2726,31 @@ footer .w {
 
   .doodle-jellyfish-wrap {
     width: 76px;
+  }
+
+  .blog-grid {
+    gap: 8px !important;
+  }
+
+  .blog-card,
+  .blog-card-more {
+    height: 135px !important;
+    min-height: 120px !important;
+  }
+
+  .blog-tag {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+  }
+
+  .blog-arrow {
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 11px !important;
+  }
+
+  .blog-card-more h3 {
+    font-size: 11.5px !important;
   }
 }
 
